@@ -1,0 +1,121 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+:root {
+    --fonte1: 'Open Sans', Arial, Helvetica, sans-serif;
+    --cor0: #FF5555;
+    --cor1: #5A55ED;
+    --cor2: #597FF7;
+    --cor3: #5B9DE0;
+    --cor4: #59D2F7;
+    --cor5: #55EDE9;
+}
+
+::selection {
+    background-color: white;
+    color: black;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: linear-gradient(to right, var(--cor1), var(--cor2));
+    font-family: var(--fonte1);
+    font-size: 1em;
+    color: white;
+    position: relative;
+}
+
+header {
+    background: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3));
+    font-size: 1.1em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: -1px;
+}
+
+header img {
+    margin: 5px 0px;
+}
+
+nav {
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.normal-btn {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+    padding: 25px;
+    border-radius: 2px;
+}
+
+.special-btn {
+    background-color: var(--cor0);
+    color: black;
+    margin: 15px 0px;
+    padding: 10px 30px;
+    border-radius: 25px;
+}
+
+.normal-btn, .special-btn {
+    display: inline-block;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+
+.normal-btn:hover, .special-btn:hover {
+    background-image: linear-gradient(to top, transparent, rgba(255, 255, 255, 0.15));
+}
+
+main {
+    text-align: justify;
+    max-width: 80vw;
+    height: 50vh;
+    padding: 50px;
+    margin: 40px auto 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+main h1, p {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+    max-width: 750px;
+    padding: 10px 0px;
+}
+
+main img {
+    position: absolute;
+    right: 10%;
+    z-index: -999;
+    max-width: 30%;
+}
+
+.ocultar {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 150px;
+}
+
+footer .social-icons {
+    max-width: 40%;
+}
